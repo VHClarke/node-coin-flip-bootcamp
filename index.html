@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+
+    <style media="screen">
+    * {
+      box-sizing: border-box;
+    }
+    .boxOne {
+      display: flex;
+      justify-content: center;
+    }
+    h1 {
+      text-align: center;
+      font-family: 'Pacifico', cursive;
+      font-size: 30px;
+    }
+
+    button#firstButton {
+      border-radius: 35%;
+      height: 45px;
+    }
+
+    p {
+      margin: 14px;
+      font-size: 20px;
+      font-family: fantasy;
+    }
+
+    body {
+      background-image: url("https://live.staticflickr.com/1797/43188988455_f30ec7353c_b.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    img {
+        border-radius: 200px;
+    }
+
+    </style>
+  </head>
+  <body>
+  <h1>COIN FLIP</h1>
+  <section class="boxOne">
+    <button id="firstButton" type="button">CLICK ME</button>
+    <p>
+    You got: <span id="result"></span>
+    </p>
+    <img src="">
+  </body>
+  </section>
+  <script>
+
+  let heads = 0;
+  let tails = 0;
+
+  function flip(coin) {
+  document.getElementById("result").innerHTML = coin;
+  console.log(coin)
+  }
+
+  document.querySelector("#firstButton").addEventListener('click', function () {
+      x = (Math.floor(Math.random() * 2) == 0);
+      if(x){
+        flip("heads");
+        document.querySelector("img").src = "https://i.ibb.co/Jzk0ckc/heads.png"
+      }else{
+          flip("tails");
+          document.querySelector("img").src = "https://i.ibb.co/Kb7Ld0S/tails.png"
+          console.log(heads,tails)
+      }
+  });
+  </script>
+
+</html>

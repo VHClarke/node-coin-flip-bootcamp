@@ -1,22 +1,11 @@
-# 💸 Week08 Bootcamp2019a Project: Node Coin Flip Game
+# Coin Flip Project
+I created a coin flip guessing game web application that uses the fs and http modules. I used the http to create the server and fs to read your html file. I also included in the vanilla ES6 js in a script tag at the bottom of my html file.
 
-### Goal: Create a simple web application that uses the fs and http modules. Use http to create the server and fs to read your html file. Include vanilla ES6 js in a script tag at the bottom of your html file. Try creating a coin flip guessing game
+![alt tag](flip.png)
 
-### How to submit your code for review:
+The most painful part when creating my code was trying to get the images to appear while running the site off of my local server. I received a CORB error, which I have not encountered before. I attempted to research the answer online but wasn't getting further along in the process. I then decided to reach out for help on the slack. It turns out in my javascript, the img source I was using was linking to the HTML that frames the image
+(img scr = "https://i.ibb.co/Jzk0ckc"), not to the actual image. Once I changed to img src to https://i.ibb.co/Jzk0ckc/heads.png my images started to appear.
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+## How It's Made:
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+**Tech used:** HTML, CSS, JavaScript, Framework of choice
