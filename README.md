@@ -8,4 +8,4 @@ The most painful part when creating my code was trying to get the images to appe
 
 ## How It's Made:
 
-**Tech used:** HTML, CSS, JavaScript, Framework of choice
+**Tech used:** HTML, CSS, JavaScript
